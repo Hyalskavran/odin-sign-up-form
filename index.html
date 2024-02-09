@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Sign up form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="sign-up-container">
+        <div class="img-container">
+            <img src="img/Caribena-versicolor-3.jpg" alt="Caribena versicolor" srcset="">
+            <div class="logo-container">
+                <div class="logo">
+                    <img src="img/odin-lined.png" alt="Odin logo" srcset="">
+                    <div class="word-container">
+                        <span class="letter-spacing-adjust">O</span>
+                        <span>D</span>
+                        <span class="letter-spacing-adjust">I</span>
+                        <span>N</span>
+                      </div>
+                </div>
+                <div class="img-credits">
+                    <a href="https://arent.pl/caribena-versicolor/" target="_blank" rel="noopener noreferrer">Arent - Caribena Versicolor</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="text-top">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    <br>Sign up <span>now</span> to get started.</p>
+                <p>You <span>know</span> you want to.</p>
+            </div>
+            <div class="form-area">
+                <form action="" onsubmit="return validateForm()">
+                    <fieldset>
+                        <legend>Let's do this!</legend>
+                        <div>
+                            <label for="first-name">FIRST NAME</label>
+                            <input type="text" placeholder="Adrian" title="Name must start from uppercase" pattern="[A-Z][a-z]*" name="first-name" id="first-name" required>
+                        </div>
+    
+                        <div>
+                            <label for="last-name">LAST NAME</label>
+                            <input type="text" placeholder="Gorniak" title="Name must start from uppercase" pattern="[A-Z][a-z]*" name="last-name" id="last-name" required>
+                        </div>
+    
+                        <div>
+                            <label for="email">EMAIL</label>
+                            <input type="email" placeholder="email@email.com" name="email" id="email" required>
+                        </div>
+    
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" pattern="[0-9]+" title="Please enter only numbers" placeholder="123456789" name="phone" id="phone" required>
+                        </div>
+    
+                        <div class="password-field">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" title="Minimum 8 characters, at least one uppercase letter, one lowercase letter, one digit, and one special character" name="password" id="password" required>
+                        </div>
+    
+                        <div>
+                            <label for="confirm-password">CONFIRM PASSWORD</label>
+                            <input type="password" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}" title="Minimum 8 characters, at least one uppercase letter, one lowercase letter, one digit, and one special character" name="confirm-password" id="confirm-password" required>
+                        </div>
+                    </fieldset>
+
+                    <button type="submit">Create Account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
